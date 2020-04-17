@@ -1,0 +1,11 @@
+Step1 :
+	Add dependency in Maven pom.xml
+Step2 :
+	Create a listener class for this report (Say ExtentReportListener.java)
+	copy code from internet (template same for reports)
+Step 3 :
+	Add listener tag in testng.xml
+	  <listeners>
+	  	<listener
+	  		class-name="com.BasicProj.Utils.ExtentReportListener"/>
+	  </listeners>

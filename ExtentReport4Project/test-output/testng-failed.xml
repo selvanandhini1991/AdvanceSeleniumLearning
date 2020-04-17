@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.ExtentReport4Project.Basictest.basic_test">
+        <methods>
+          <include name="nav_PDP"/>
+          <include name="Navigate_Clothing"/>
+          <include name="Clothing_Title"/>
+          <include name="flush"/>
+          <include name="Clothing_Submenu"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="properties_setup"/>
+        </methods>
+      </class> <!-- com.ExtentReport4Project.Basictest.basic_test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

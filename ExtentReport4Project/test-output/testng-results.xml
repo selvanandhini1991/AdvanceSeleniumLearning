@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="3" failed="1" ignored="0" total="5" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1866" started-at="2019-12-04T12:02:54Z" finished-at="2019-12-04T12:02:56Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="1866" started-at="2019-12-04T12:02:54Z" finished-at="2019-12-04T12:02:56Z">
+      <class name="com.ExtentReport4Project.Basictest.basic_test">
+        <test-method status="PASS" signature="properties_setup()[pri:0, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="properties_setup" is-config="true" duration-ms="48401" started-at="2019-12-04T12:02:06Z" finished-at="2019-12-04T12:02:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- properties_setup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="setUp" is-config="true" duration-ms="32" started-at="2019-12-04T12:02:54Z" finished-at="2019-12-04T12:02:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="HomePage_Title()[pri:1, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="HomePage_Title" duration-ms="51" started-at="2019-12-04T12:02:54Z" finished-at="2019-12-04T12:02:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage_Title -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="tearDown" is-config="true" duration-ms="1226" started-at="2019-12-04T12:02:54Z" finished-at="2019-12-04T12:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HomePage_Title status=SUCCESS method=basic_test.HomePage_Title()[pri:1, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="setUp" is-config="true" duration-ms="0" started-at="2019-12-04T12:02:56Z" finished-at="2019-12-04T12:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="Clothing_Submenu()[pri:2, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="Clothing_Submenu" duration-ms="512" started-at="2019-12-04T12:02:56Z" finished-at="2019-12-04T12:02:56Z">
+          <exception class="org.openqa.selenium.json.JsonException">
+            <message>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INDIA-SELVAN', ip: '10.113.34.254', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INDIA-SELVAN', ip: '10.113.34.254', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+at java.util.LinkedHashMap$LinkedValues.forEach(Unknown Source)
+at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+at org.openqa.selenium.json.Json.toJson(Json.java:42)
+at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+at com.ExtentReport4Project.Utils.commonActions.mousehover(commonActions.java:24)
+at com.ExtentReport4Project.Library.HomePage.verify_clothing_submenu(HomePage.java:46)
+at com.ExtentReport4Project.Basictest.basic_test.Clothing_Submenu(basic_test.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INDIA-SELVAN', ip: '10.113.34.254', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+at org.openqa.selenium.json.Json.toJson(Json.java:44)
+... 36 more
+Caused by: java.lang.reflect.InvocationTargetException
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+... 48 more
+Caused by: org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INDIA-SELVAN', ip: '10.113.34.254', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\S1A43~1.SUB\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52844}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b954180330a054bcf8fb026ddaa5e864
+*** Element info: {Using=xpath, value=//a[@class='asc-nav-parent menu asc-nav-category'][contains(text(),'CLOTHING')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.getWrappedElement(Unknown Source)
+at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+... 53 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.json.JsonException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Clothing_Submenu -->
+        <test-method status="FAIL" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="tearDown" is-config="true" duration-ms="6" started-at="2019-12-04T12:02:56Z" finished-at="2019-12-04T12:02:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Clothing_Submenu status=FAILURE method=basic_test.Clothing_Submenu()[pri:2, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INDIA-SELVAN', ip: '10.113.34.254', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\S1A43~1.SUB\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52844}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b954180330a054bcf8fb026ddaa5e864]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INDIA-SELVAN', ip: '10.113.34.254', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\S1A43~1.SUB\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52844}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b954180330a054bcf8fb026ddaa5e864
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at com.ExtentReport4Project.Drives.mainclass.tearDown(mainclass.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="setUp" is-config="true" duration-ms="0" started-at="2019-12-04T12:02:56Z" finished-at="2019-12-04T12:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="Navigate_Clothing()[pri:3, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="Navigate_Clothing" duration-ms="0" started-at="2019-12-04T12:02:56Z" finished-at="2019-12-04T12:02:56Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INDIA-SELVAN', ip: '10.113.34.254', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\S1A43~1.SUB\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52844}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b954180330a054bcf8fb026ddaa5e864]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INDIA-SELVAN', ip: '10.113.34.254', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\S1A43~1.SUB\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52844}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b954180330a054bcf8fb026ddaa5e864
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at com.ExtentReport4Project.Drives.mainclass.tearDown(mainclass.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Navigate_Clothing -->
+        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-12-04T12:02:56Z" finished-at="2019-12-04T12:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="setUp" is-config="true" duration-ms="0" started-at="2019-12-04T12:02:56Z" finished-at="2019-12-04T12:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-12-04T12:02:56Z" finished-at="2019-12-04T12:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="Clothing_Title()[pri:4, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="Clothing_Title" duration-ms="0" started-at="2019-12-04T12:02:56Z" finished-at="2019-12-04T12:02:56Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INDIA-SELVAN', ip: '10.113.34.254', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\S1A43~1.SUB\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52844}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b954180330a054bcf8fb026ddaa5e864]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INDIA-SELVAN', ip: '10.113.34.254', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\S1A43~1.SUB\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52844}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b954180330a054bcf8fb026ddaa5e864
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at com.ExtentReport4Project.Drives.mainclass.tearDown(mainclass.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Clothing_Title -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="setUp" is-config="true" duration-ms="0" started-at="2019-12-04T12:02:56Z" finished-at="2019-12-04T12:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="nav_PDP()[pri:5, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="nav_PDP" duration-ms="0" started-at="2019-12-04T12:02:56Z" finished-at="2019-12-04T12:02:56Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INDIA-SELVAN', ip: '10.113.34.254', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\S1A43~1.SUB\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52844}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b954180330a054bcf8fb026ddaa5e864]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INDIA-SELVAN', ip: '10.113.34.254', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\S1A43~1.SUB\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52844}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b954180330a054bcf8fb026ddaa5e864
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at com.ExtentReport4Project.Drives.mainclass.tearDown(mainclass.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nav_PDP -->
+        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-12-04T12:02:56Z" finished-at="2019-12-04T12:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="flush()[pri:0, instance:com.ExtentReport4Project.Basictest.basic_test@685cb137]" name="flush" is-config="true" duration-ms="0" started-at="2019-12-04T12:02:56Z" finished-at="2019-12-04T12:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+      </class> <!-- com.ExtentReport4Project.Basictest.basic_test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,28 @@
+1.Add dependency
+	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+	<dependency>
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>4.0.9</version>
+	</dependency>
+
+2. Next add in class implements IReporter
+	ExtentReports extent = new ExtentReports();
+	extent.attachReporter(reporterType);
+
+3. Add flush() to update results at end of test
+	@AfterSuite
+		public void flush() {
+			extent.flush()
+		}
+	
+4. Create test
+	ExtentTest test = extent.createTest("MyFirstTest");
+	test.pass("details");
+	
+	// short-hand
+	extent.createTest("MyFirstTest").pass("details");
+		
+	// description
+	extent.createTest("MyFirstTest", "Test Description").pass("details");
+	
